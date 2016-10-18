@@ -3,10 +3,8 @@ console.log('wired up!')
 var appSelector = document.querySelector("#app-container")
 var proSearchSelector = document.querySelector('.prof-search')
 var proBtnSelector = document.querySelector('.prof-search-btn')
-console.log($)
 
 var hashChanger = function(evt){
-   console.log(evt)
    switch(evt.type){
       case "click":
          window.location.hash = proSearchSelector.value
@@ -46,12 +44,10 @@ var profileBuilder = function(profileData){
           profileHtml += '</ul><hr>'
          proContainerSelector.innerHTML = profileHtml
 
-   console.log(profileData)
 
 
 }
 var repoBuilder = function(repoArr){
-   console.log(repoArr)
 
    var repoColSelector = document.querySelector('.repo-col')
    var ulInsert = '               <ul class="repo-list"></ul>'
@@ -66,10 +62,8 @@ var repoBuilder = function(repoArr){
          languageTitle = languageHolder
 
       }else{storedLanguage = 'no-lang'}
-      console.log(languageHolder)
       var repoListSelector = document.querySelector('.repo-list')
 
-      console.log(repoArr)
 
           var repoHtml = '               <hr><div class="' + storedLanguage + '-type' +'">'
           repoHtml += '                  <li class ="repo-name"><a href="'+ repoObj.html_url +'">' + repoObj.name +'</a></li>'
