@@ -1,0 +1,79 @@
+@import "./imports/_normalize.scss";
+
+*{ box-sizing: border-box }
+img {
+
+   display: block;
+}
+.search-icon{
+   font-size: 27px;
+
+
+}
+.profile-search{
+   margin-bottom: 10px;
+}
+#app-container{
+   margin-left: 20px;
+
+   .profile-img{
+      width: 100%;
+      border-radius: 10px;
+   }
+   .profile-col{
+      ul{
+         padding: 0;
+         li{
+            list-style: none;
+
+            span{font-size: 16px;}
+            i{
+               padding-right: 4px;
+               color: #999
+
+            }
+
+         }
+
+
+      }
+
+
+
+
+
+   }
+
+   .repo-col{
+
+      .repo-list{
+         list-style: none;
+
+         .html-type{
+
+            i{color: #E44B23;}
+
+      }
+         .shell-type{
+
+            i{color: #89E051;}
+         }
+
+         .javascript-type{
+
+            i{color: #F1E05A;}
+         }
+
+         .css-type{
+            i{color: #563D7C;}
+         }
+         .no-lang-type{
+            i{display: none;}
+         }
+
+
+
+   }
+
+}
+}
